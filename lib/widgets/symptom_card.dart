@@ -18,6 +18,7 @@ class SymptomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BoxPanel(
+      padding: EdgeInsets.all(kSpacingUnit * 2),
       width: kSpacingUnit * 25,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,

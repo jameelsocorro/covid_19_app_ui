@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: kSpacingUnit * 3),
+              SizedBox(height: kSpacingUnit * 5),
               Text(
                 'Hi, Miya',
                 style: kHeadingTextStyle,
@@ -77,18 +77,83 @@ class HomeScreen extends StatelessWidget {
                 height: kSpacingUnit * 15,
                 child: ListView(
                   shrinkWrap: true,
-                  padding: EdgeInsets.symmetric(vertical: kSpacingUnit * 2),
+                  padding: EdgeInsets.only(
+                    top: kSpacingUnit * 2,
+                    bottom: kSpacingUnit * 3,
+                  ),
                   scrollDirection: Axis.horizontal,
                   children: [
+                    SizedBox(width: kSpacingUnit * 3),
                     SymptomCard(
                       assetUrl: 'assets/icons/high_fever.svg',
                       title: 'High Fever',
                       description: 'Do mollit occaecat voluptate nulla fugiat.',
                     ),
+                    SizedBox(width: kSpacingUnit * 3),
                     SymptomCard(
                       assetUrl: 'assets/icons/cough.svg',
                       title: 'Dry Cough',
                       description: 'Do mollit occaecat voluptate nulla fugiat.',
+                    ),
+                    SizedBox(width: kSpacingUnit * 3),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: kSpacingUnit * 4),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text(
+                      'Preventions',
+                      style: kTitleTextStyle,
+                    ),
+                    Text(
+                      'View All',
+                      style: kBodyTextStyle.copyWith(
+                        color: kSecondaryTextColor,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: kSpacingUnit * 2),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: kSpacingUnit * 3),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    BoxPanel(
+                      padding: EdgeInsets.all(kSpacingUnit),
+                      child: SvgPicture.asset(
+                        'assets/icons/mask.svg',
+                        width: kSpacingUnit * 4,
+                        height: kSpacingUnit * 4,
+                      ),
+                    ),
+                    BoxPanel(
+                      padding: EdgeInsets.all(kSpacingUnit),
+                      child: SvgPicture.asset(
+                        'assets/icons/stay_home.svg',
+                        width: kSpacingUnit * 4,
+                        height: kSpacingUnit * 4,
+                      ),
+                    ),
+                    BoxPanel(
+                      padding: EdgeInsets.all(kSpacingUnit),
+                      child: SvgPicture.asset(
+                        'assets/icons/no_handshake.svg',
+                        width: kSpacingUnit * 4,
+                        height: kSpacingUnit * 4,
+                      ),
+                    ),
+                    BoxPanel(
+                      padding: EdgeInsets.all(kSpacingUnit),
+                      child: SvgPicture.asset(
+                        'assets/icons/hand_wash.svg',
+                        width: kSpacingUnit * 4,
+                        height: kSpacingUnit * 4,
+                      ),
                     ),
                   ],
                 ),
