@@ -5,11 +5,11 @@ This repository is based on converting this mockup into a flutter app.
 ![covid 19 app](assets/images/thumbnail.png?raw=true)
 
 ## Youtube
-You may watch it here: https://youtu.be/x77Ijv0kCJc
->Make sure to like + subscribe my [youtube](https://www.youtube.com/channel/UCCA4f3dCsJMVBXr6gmJ5gxA?view_as=subscriber) for more!
+You may watch it here: https://youtu.be/JBI78K7G5sg
+>Make sure to like + subscribe my [youtube](https://www.youtube.com/c/devlift) for more!
 
 ## Design Credit:
-https://www.behance.net/gallery/96438079/Profile-UI
+https://dribbble.com/shots/11357811-Covid-19-App-UI
 
 
 ## Support Me
